@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07152f">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="description" content="Kuara Solar é uma usina fotovoltaica portátil para veículos elétricos, frotas, agronegócio, emergências e operações off-grid. Energia solar que vai com você.">
+  <meta name="keywords" content="usina fotovoltaica portátil, gerador solar portátil, energia solar portátil, energia off-grid, energia para veículo elétrico, sistema fotovoltaico portátil, energia para frotas, energia para camping">
+  <meta name="author" content="Kuara Solar">
+  <title>Kuara Solar | Usina Fotovoltaica Portátil e Energia Off-Grid</title>
+
+  <!--
+    DOMÍNIO OFICIAL: quando o domínio definitivo existir, descomente as duas
+    linhas abaixo e troque "https://SEU-DOMINIO.com.br/" pela URL real.
+    <link rel="canonical" href="https://SEU-DOMINIO.com.br/">
+    <meta property="og:url" content="https://SEU-DOMINIO.com.br/">
+  -->
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/kuara-poster.webp" as="image" type="image/webp" fetchpriority="high">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Kuara Solar">
+  <meta property="og:title" content="Kuara Solar | Energia solar que vai com você">
+  <meta property="og:description" content="Usina fotovoltaica portátil para veículos elétricos, operações remotas, emergências e aplicações off-grid.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kuara Solar | Energia solar que vai com você">
+  <meta name="twitter:description" content="Usina fotovoltaica portátil para veículos elétricos, operações remotas, emergências e aplicações off-grid.">
+  <meta name="twitter:image" content="assets/og-image.jpg">
+
+  <!--
+    Política de segurança possível em hospedagem 100% estática (GitHub Pages
+    não permite cabeçalhos HTTP customizados, então isto é feito via <meta>).
+    Se você apagar o bloco do Google Analytics mais abaixo, pode remover as
+    referências a googletagmanager.com / google-analytics.com daqui também.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.google-analytics.com">
+
+  <style>
+    :root {
+      --navy-950:#030a18;
+      --navy-900:#061329;
+      --navy-850:#081a37;
+      --navy-800:#0b2144;
+      --navy-700:#12315d;
+      --gold:#ffbc32;
+      --gold-2:#f7941d;
+      --orange:#ff6b00;
+      --cream:#fff6df;
+      --white:#f8fbff;
+      --muted:#b7c3d7;
+      --line:rgba(255,255,255,.12);
+      --glass:rgba(6,19,41,.66);
+      --shadow:0 24px 80px rgba(0,0,0,.35);
+      --radius:24px;
+      --container:min(1160px, calc(100% - 32px));
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--navy-950)}
+    body{
+      margin:0;
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--white);
+      background:
+        radial-gradient(900px 600px at 10% 14%,rgba(36,88,165,.18),transparent 55%),
+        radial-gradient(700px 560px at 90% 35%,rgba(255,130,0,.08),transparent 60%),
+        var(--navy-950);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+      overflow-x:hidden;
+    }
+
+    img,video{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    ::selection{background:var(--gold);color:var(--navy-950)}
+
+    .skip-link{position:fixed;left:12px;top:-80px;z-index:9999;background:#fff;color:#000;padding:10px 14px;border-radius:10px}
+    .skip-link:focus{top:12px}
+    .container{width:var(--container);margin-inline:auto}
+    .section{padding:84px 0;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+    .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+    h1,h2,h3,p{margin-top:0}
+    h1,h2,h3{letter-spacing:-.035em}
+    h2{font-size:clamp(2rem,8vw,4.5rem);line-height:.98;margin-bottom:18px}
+    h3{font-size:1.2rem;line-height:1.1}
+    p{color:var(--muted);line-height:1.72}
+    .lead{font-size:clamp(1rem,2.8vw,1.24rem);max-width:760px}
+    .text-gradient{background:linear-gradient(110deg,#fff2bb 0%,var(--gold) 38%,var(--orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+    /* Brand mark (inline SVG, reused via <use>) */
+    .brand-mark,.hero-mark,.footer-mark{flex:0 0 auto;display:block}
+    .brand-mark{width:44px;height:44px}
+    .footer-mark{width:50px;height:50px}
+
+    /* Header */
+    .site-header{position:fixed;inset:0 0 auto;z-index:80;padding:12px 0;transition:.3s ease}
+    .site-header.scrolled{background:rgba(3,10,24,.78);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px}
+    .brand{display:flex;align-items:center;gap:10px;min-width:0}
+    .brand strong{font-size:.95rem;letter-spacing:.11em;text-transform:uppercase;white-space:nowrap}
+    .menu-toggle{width:46px;height:46px;border:1px solid var(--line);background:rgba(255,255,255,.05);border-radius:14px;color:#fff;display:grid;place-items:center}
+    .menu-toggle svg{width:22px}
+    .nav-links{display:none;position:absolute;top:76px;left:16px;right:16px;padding:14px;background:rgba(4,12,29,.96);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+    .nav-links.open{display:grid}
+    .nav-links a{padding:13px 12px;color:#dbe6f8;border-radius:10px;font-size:.94rem}
+    .nav-links a:hover,.nav-links a:focus-visible{background:rgba(255,255,255,.06);color:#fff}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 18px;border-radius:999px;border:1px solid transparent;font-weight:800;font-size:.92rem;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{color:#17100a;background:linear-gradient(135deg,var(--gold),var(--orange));box-shadow:0 12px 34px rgba(255,122,0,.24)}
+    .btn-secondary{background:rgba(255,255,255,.07);border-color:var(--line);color:#fff;backdrop-filter:blur(10px)}
+    .btn svg{width:18px;height:18px}
+    /* declarada depois de .btn de propósito: precisa vencer o display:inline-flex do .btn neste empate de especificidade */
+    .nav-cta{display:none}
+
+    /* Hero */
+    .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#040c1c}
+    .hero-media{position:absolute;inset:0}
+    .hero-video{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.95) contrast(1.03)}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,9,22,.28) 0%,rgba(3,9,22,.34) 35%,rgba(3,9,22,.94) 90%,var(--navy-950) 100%),linear-gradient(90deg,rgba(3,9,22,.6),rgba(3,9,22,.1) 75%)}
+    .hero-content{position:relative;z-index:2;padding:118px 0 62px;width:100%}
+    .hero-logo{display:inline-flex;align-items:center;gap:14px;margin-bottom:26px}
+    .hero-logo .hero-mark{width:clamp(44px,9vw,60px);height:clamp(44px,9vw,60px);filter:drop-shadow(0 10px 26px rgba(255,140,0,.28))}
+    .hero-wordmark{display:flex;flex-direction:column;line-height:1.05;font-weight:900}
+    .hero-wordmark strong{font-size:clamp(1.05rem,3vw,1.5rem);color:var(--cream);letter-spacing:.16em}
+    .hero-wordmark em{font-style:normal;font-size:clamp(.68rem,1.8vw,.9rem);letter-spacing:.34em;background:linear-gradient(110deg,#fff2bb,var(--gold),var(--orange));-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:2px}
+    .hero h1{font-size:clamp(3rem,15vw,7.4rem);line-height:.86;max-width:980px;margin-bottom:22px;text-wrap:balance}
+    .hero .lead{max-width:690px;color:#dce5f5;margin-bottom:28px}
+    .hero-actions{display:flex;flex-direction:column;align-items:stretch;gap:10px;max-width:430px}
+    .hero-proof{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:28px;max-width:570px}
+    .proof-pill{padding:11px 12px;border:1px solid var(--line);border-radius:14px;background:rgba(6,19,41,.45);backdrop-filter:blur(10px);font-size:.78rem;font-weight:700;color:#e2eafb;text-align:center}
+    .scroll-cue{display:none}
+
+    /* Intro */
+    .problem-grid{display:grid;gap:28px}
+    .statement{font-size:clamp(1.75rem,7vw,3.6rem);line-height:1.05;letter-spacing:-.045em;max-width:880px;color:#eaf1fc}
+    .statement strong{color:var(--gold)}
+    .mini-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    .mini-card{padding:20px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border-radius:20px}
+    .mini-card span{display:block;color:var(--gold);font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;margin-bottom:8px}
+    .mini-card p{margin:0;font-size:.95rem}
+
+    /* Product */
+    .product-shell{border:1px solid var(--line);background:linear-gradient(145deg,rgba(9,34,70,.75),rgba(4,14,32,.72));border-radius:28px;padding:16px;box-shadow:var(--shadow);overflow:hidden}
+    .product-video-wrap{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:16/9;background:#091426}
+    .product-video{width:100%;height:100%;object-fit:cover}
+    .video-badge{position:absolute;left:12px;bottom:12px;padding:8px 10px;border-radius:999px;background:rgba(3,10,24,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);font-size:.72rem;font-weight:800}
+    .product-copy{padding:22px 6px 6px}
+    .feature-list{display:grid;gap:10px;margin-top:18px}
+    .feature-item{display:flex;gap:12px;align-items:flex-start;padding:13px 0;border-top:1px solid rgba(255,255,255,.08)}
+    .feature-icon{flex:0 0 36px;width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,rgba(255,190,50,.18),rgba(255,107,0,.12));border:1px solid rgba(255,183,50,.28);display:grid;place-items:center;color:var(--gold)}
+    .feature-icon svg{width:18px;height:18px}
+    .feature-item strong{display:block;font-size:.93rem;margin-bottom:4px}
+    .feature-item p{font-size:.85rem;margin:0}
+
+    /* Process */
+    .steps{display:grid;gap:10px;counter-reset:step}
+    .step{counter-increment:step;padding:20px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.032);position:relative;overflow:hidden}
+    .step::before{content:"0" counter(step);display:block;font-size:.7rem;letter-spacing:.14em;color:var(--gold);font-weight:900;margin-bottom:22px}
+    .step::after{content:"";position:absolute;width:90px;height:90px;right:-40px;top:-40px;border-radius:50%;background:rgba(255,156,0,.08);filter:blur(2px)}
+    .step h3{margin-bottom:8px}
+    .step p{margin:0;font-size:.9rem}
+
+    /* Use cases */
+    .use-grid{display:grid;gap:12px}
+    .use-card{position:relative;min-height:235px;padding:22px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:linear-gradient(145deg,rgba(14,39,77,.7),rgba(6,18,39,.76));transition:.25s ease}
+    .use-card:hover{transform:translateY(-4px);border-color:rgba(255,188,50,.32)}
+    .use-number{position:absolute;right:16px;top:10px;font-size:3.6rem;font-weight:900;letter-spacing:-.09em;color:rgba(255,255,255,.04)}
+    .use-icon{width:48px;height:48px;border-radius:16px;background:rgba(255,181,31,.1);display:grid;place-items:center;color:var(--gold);margin-bottom:30px;border:1px solid rgba(255,188,50,.16)}
+    .use-icon svg{width:23px;height:23px}
+    .use-card h3{font-size:1.3rem;margin-bottom:8px}
+    .use-card p{font-size:.9rem;margin-bottom:16px}
+    .tag{display:inline-flex;font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;color:#ffd770;border:1px solid rgba(255,193,52,.2);padding:6px 9px;border-radius:999px;background:rgba(255,168,0,.06);font-weight:800}
+
+    /* Showcase */
+    .showcase{display:grid;gap:10px}
+    .showcase figure{margin:0;position:relative;overflow:hidden;border-radius:20px;border:1px solid var(--line);background:#091426}
+    .showcase img{width:100%;height:100%;object-fit:cover;min-height:260px;transition:transform .6s ease}
+    .showcase figure:hover img{transform:scale(1.035)}
+    .showcase figcaption{position:absolute;inset:auto 12px 12px;padding:10px 12px;border-radius:12px;background:rgba(3,10,24,.72);backdrop-filter:blur(10px);font-size:.78rem;font-weight:800}
+
+    /* Value */
+    .value-panel{padding:30px 22px;border:1px solid rgba(255,192,44,.18);border-radius:28px;background:radial-gradient(500px 260px at 15% 5%,rgba(255,165,0,.1),transparent),linear-gradient(135deg,#0a2346,#06142d);overflow:hidden;position:relative}
+    .value-panel::after{content:"KUARA";position:absolute;right:-18px;bottom:-28px;font-weight:950;font-size:clamp(4rem,23vw,11rem);letter-spacing:-.1em;color:rgba(255,255,255,.025);pointer-events:none}
+    .value-panel p{max-width:780px}
+    .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+    .value-item{padding:16px;border-radius:16px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);min-height:105px}
+    .value-item strong{display:block;color:#fff;font-size:.9rem;margin-bottom:5px}
+    .value-item span{font-size:.77rem;color:var(--muted);line-height:1.45}
+
+    /* Audience */
+    .audience-track{display:flex;gap:10px;overflow:auto;padding:4px 1px 16px;scroll-snap-type:x mandatory;scrollbar-width:none}
+    .audience-track::-webkit-scrollbar{display:none}
+    .audience-card{flex:0 0 min(82vw,310px);scroll-snap-align:start;padding:22px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.035)}
+    .audience-card small{color:var(--gold);font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .audience-card h3{margin:14px 0 9px}
+    .audience-card p{font-size:.88rem;margin:0}
+
+    /* Form */
+    .contact-grid{display:grid;gap:24px}
+    .contact-copy h2{font-size:clamp(2.5rem,10vw,5.7rem)}
+    .contact-form{padding:20px;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.04);box-shadow:var(--shadow)}
+    .field{display:grid;gap:7px;margin-bottom:13px}
+    .field label{font-size:.78rem;font-weight:800;color:#dfe8f7}
+    .field input,.field select,.field textarea{width:100%;color:#fff;background:#06142d;border:1px solid rgba(255,255,255,.14);border-radius:13px;padding:13px 14px;outline:none;transition:border-color .18s ease,box-shadow .18s ease}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(255,188,50,.65);box-shadow:0 0 0 3px rgba(255,188,50,.1)}
+    .field select option{background:#07152f}
+    .field textarea{min-height:108px;resize:vertical}
+    .form-note{font-size:.72rem;color:#8ea0bb;margin:10px 0 0;line-height:1.5}
+    .form-status{display:none;margin-top:12px;padding:10px 12px;border-radius:12px;background:rgba(255,190,45,.09);border:1px solid rgba(255,190,45,.16);font-size:.78rem;color:#ffe49b}
+
+    /* FAQ */
+    .faq{display:grid;gap:8px}
+    details{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.03);overflow:hidden}
+    summary{list-style:none;padding:18px 44px 18px 18px;font-weight:800;position:relative;cursor:pointer}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);font-size:1.45rem;color:var(--gold);font-weight:400}
+    details[open] summary::after{content:"–"}
+    details p{padding:0 18px 18px;margin:0;font-size:.9rem}
+
+    /* Footer */
+    footer{padding:32px 0 calc(32px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#020714}
+    .footer-grid{display:grid;gap:18px}
+    .footer-brand{display:flex;align-items:center;gap:12px}
+    .footer-brand span{display:block;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+    .footer-brand small{display:block;color:var(--muted);margin-top:3px}
+    .footer-meta{font-size:.74rem;color:#8192ae;line-height:1.7}
+
+    /* Floating CTA */
+    .floating-cta{position:fixed;z-index:65;left:14px;right:14px;bottom:14px;display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:999px;background:linear-gradient(135deg,var(--gold),var(--orange));color:#17100a;font-weight:900;box-shadow:0 18px 50px rgba(0,0,0,.38),0 8px 30px rgba(255,119,0,.2);transition:.2s ease}
+    .floating-cta.hidden{transform:translateY(110px);opacity:0;pointer-events:none}
+
+    /* reveal */
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:none}
+
+    @media (min-width:680px){
+      :root{--container:min(1160px, calc(100% - 56px))}
+      .section{padding:105px 0}
+      .hero-actions{flex-direction:row;align-items:center;max-width:none}
+      .hero-proof{grid-template-columns:repeat(4,1fr)}
+      .mini-grid{grid-template-columns:repeat(2,1fr)}
+      .steps{grid-template-columns:repeat(2,1fr)}
+      .use-grid{grid-template-columns:repeat(2,1fr)}
+      .showcase{grid-template-columns:1.2fr .8fr;grid-template-rows:repeat(2,260px)}
+      .showcase figure:first-child{grid-row:1 / 3}
+      .contact-form{padding:28px}
+      .footer-grid{grid-template-columns:1fr auto;align-items:center}
+      .floating-cta{left:auto;right:20px;width:auto;padding-inline:22px}
+    }
+
+    @media (min-width:960px){
+      .site-header{padding:14px 0}
+      .brand-mark{width:50px;height:50px}
+      .menu-toggle{display:none}
+      .nav-links{display:flex;position:static;background:none;border:0;box-shadow:none;padding:0;gap:2px;align-items:center}
+      .nav-links a{padding:10px 12px}
+      .nav-cta{display:inline-flex}
+      .hero-content{padding:150px 0 78px}
+      .hero h1{font-size:clamp(5rem,9vw,8.8rem);max-width:1120px}
+      .hero .lead{font-size:1.2rem}
+      .scroll-cue{display:flex;position:absolute;right:0;bottom:78px;align-items:center;gap:10px;color:#b8c4d8;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;writing-mode:vertical-rl}
+      .scroll-cue::after{content:"";height:60px;width:1px;background:linear-gradient(var(--gold),transparent)}
+      .problem-grid{grid-template-columns:1.3fr .7fr;align-items:end}
+      .mini-grid{grid-template-columns:1fr}
+      .product-shell{display:grid;grid-template-columns:1.15fr .85fr;align-items:stretch;padding:18px}
+      .product-video-wrap{aspect-ratio:auto;min-height:570px}
+      .product-copy{padding:42px 34px}
+      .steps{grid-template-columns:repeat(5,1fr)}
+      .step{min-height:270px}
+      .use-grid{grid-template-columns:repeat(3,1fr)}
+      .use-card:first-child{grid-column:span 2;min-height:310px}
+      .use-card:first-child h3{font-size:1.8rem}
+      .use-card:nth-child(4){grid-column:span 2}
+      .value-panel{padding:52px}
+      .value-grid{grid-template-columns:repeat(4,1fr)}
+      .audience-track{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+      .audience-card{min-width:0}
+      .contact-grid{grid-template-columns:1fr .8fr;align-items:start}
+      .contact-copy{position:sticky;top:120px}
+      .floating-cta{display:none}
+    }
+
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+      .reveal{opacity:1;transform:none}
+      .hero-video{display:none}
+      .hero-media{background:url('assets/kuara-poster.webp') center/cover no-repeat}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Kuara Solar",
+        "description":"Tecnologia de geração fotovoltaica portátil para mobilidade elétrica e aplicações off-grid.",
+        "logo":"assets/icon-512.png"
+      },
+      {
+        "@type":"Product",
+        "name":"Kuara Solar — Usina Fotovoltaica Portátil",
+        "brand":{"@type":"Brand","name":"Kuara Solar"},
+        "category":"Gerador solar portátil / sistema fotovoltaico off-grid",
+        "image":"assets/og-image.jpg",
+        "description":"Plataforma móvel de geração fotovoltaica projetada para transportar, implantar e utilizar energia solar em mobilidade elétrica, operações remotas, campo e emergências."
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {"@type":"Question","name":"O que é a Kuara Solar?","acceptedAnswer":{"@type":"Answer","text":"A Kuara é uma solução de geração fotovoltaica portátil concebida para ser transportada em veículo, implantada no local de uso e utilizada em cenários de mobilidade elétrica e energia off-grid."}},
+          {"@type":"Question","name":"A Kuara pode carregar um carro elétrico?","acceptedAnswer":{"@type":"Answer","text":"A mobilidade elétrica é uma das aplicações centrais do projeto. A capacidade efetiva de recarga, potência e ganho de autonomia dependem da configuração elétrica e das especificações finais do sistema e do veículo."}},
+          {"@type":"Question","name":"A energia pode ser utilizada para outros equipamentos?","acceptedAnswer":{"@type":"Answer","text":"Sim, essa é uma das propostas da plataforma. As cargas possíveis dependem da potência, tensão, saídas e arquitetura da versão utilizada. A Kuara pode ser pensada como um hub móvel de energia para diferentes aplicações compatíveis."}},
+          {"@type":"Question","name":"A Kuara substitui eletropostos ou a rede elétrica?","acceptedAnswer":{"@type":"Answer","text":"O posicionamento mais adequado é complementar: a Kuara amplia as possibilidades de geração e uso de energia em cenários onde a infraestrutura fixa não está disponível, é limitada ou não é conveniente."}},
+          {"@type":"Question","name":"Em quais setores a tecnologia pode ser aplicada?","acceptedAnswer":{"@type":"Answer","text":"Mobilidade elétrica, frotas, agronegócio, operações remotas, emergências, camping, obras, manutenção, telecomunicações, pesquisa e outras atividades que precisem de energia descentralizada."}}
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       GOOGLE ANALYTICS 4 (opcional)
+       1) Crie uma propriedade GA4 em analytics.google.com
+       2) Troque TODAS as ocorrências de "G-XXXXXXXXXX" abaixo pelo seu
+          Measurement ID real.
+       3) Se não for usar analytics agora, apague este bloco inteiro
+          (e pode remover googletagmanager.com/google-analytics.com da
+          Content-Security-Policy lá em cima).
+       ============================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+  </script>
+</head>
+<body data-whatsapp="">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Sprite com a marca Kuara Solar (definida uma vez, reaproveitada via <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="kuaraGradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#fff2bb"/>
+        <stop offset="0.4" stop-color="#ffbc32"/>
+        <stop offset="1" stop-color="#ff6b00"/>
+      </linearGradient>
+      <symbol id="kuara-mark" viewBox="0 0 200 200">
+        <path fill="url(#kuaraGradient)" d="M 100.0,4.0 L 110.32,34.81 L 129.67,8.7 L 129.96,41.19 L 156.43,22.33 L 146.67,53.33 L 177.67,43.57 L 158.81,70.04 L 191.3,70.33 L 165.19,89.68 L 196.0,100.0 L 165.19,110.32 L 191.3,129.67 L 158.81,129.96 L 177.67,156.43 L 146.67,146.67 L 156.43,177.67 L 129.96,158.81 L 129.67,191.3 L 110.32,165.19 L 100.0,196.0 L 89.68,165.19 L 70.33,191.3 L 70.04,158.81 L 43.57,177.67 L 53.33,146.67 L 22.33,156.43 L 41.19,129.96 L 8.7,129.67 L 34.81,110.32 L 4.0,100.0 L 34.81,89.68 L 8.7,70.33 L 41.19,70.04 L 22.33,43.57 L 53.33,53.33 L 43.57,22.33 L 70.04,41.19 L 70.33,8.7 L 89.68,34.81 Z"/>
+        <circle cx="100" cy="100" r="63" fill="#0b2144"/>
+        <circle cx="100" cy="100" r="63" fill="none" stroke="url(#kuaraGradient)" stroke-width="1.5" opacity=".5"/>
+        <g transform="translate(100,104) rotate(180)">
+          <path fill="url(#kuaraGradient)" d="M0,-46 C28,-46 46,-22 46,4 C46,34 22,50 -4,46 C-2,26 6,8 22,-4 C6,2 -8,14 -16,32 C-30,20 -34,0 -28,-20 C-20,-36 -8,-44 0,-46 Z"/>
+          <path fill="none" stroke="#0b2144" stroke-width="3.2" stroke-linecap="round" opacity=".55" d="M0,-40 C-6,-14 -10,14 -12,40"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Kuara Solar — início">
+        <svg class="brand-mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#kuara-mark"></use></svg>
+        <strong>Kuara Solar</strong>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navegação principal">
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#aplicacoes">Aplicações</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" href="#contato" data-cta="header-cta">Quero conhecer</a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/kuara-poster.webp" preload="metadata">
+          <source src="assets/kuara-hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-logo">
+          <svg class="hero-mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#kuara-mark"></use></svg>
+          <span class="hero-wordmark"><strong>KUARA</strong><em>Solar</em></span>
+        </div>
+        <span class="eyebrow">Energia portátil • Solar • Off-grid</span>
+        <h1 id="hero-title">Energia solar que <span class="text-gradient">vai com você.</span></h1>
+        <p class="lead">Uma usina fotovoltaica portátil para levar geração de energia a veículos elétricos, operações remotas, campo, emergências e lugares onde a rede simplesmente não chega.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato" data-cta="hero-primary">
+            Quero conhecer a Kuara
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-secondary" href="#tecnologia" data-cta="hero-secondary">
+            Ver a tecnologia
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+          </a>
+        </div>
+        <div class="hero-proof" aria-label="Principais características">
+          <div class="proof-pill">Fotovoltaica</div>
+          <div class="proof-pill">Portátil</div>
+          <div class="proof-pill">Off-grid</div>
+          <div class="proof-pill">Multiaplicação</div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">Explore</div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="desafio-title">
+      <div class="container problem-grid">
+        <div class="reveal">
+          <span class="eyebrow">O problema que resolvemos</span>
+          <h2 id="desafio-title" class="statement">Energia costuma estar presa à infraestrutura. <strong>A Kuara muda essa lógica.</strong></h2>
+          <p class="lead">Quando a tomada está longe, um eletroposto não existe ou uma operação precisa acontecer em campo, a geração deixa de ser apenas uma questão de custo: vira uma questão de disponibilidade.</p>
+        </div>
+        <div class="mini-grid reveal">
+          <article class="mini-card">
+            <span>Mobilidade</span>
+            <p>Levar a própria fonte de geração para complementar a autonomia energética de veículos e frotas elétricas.</p>
+          </article>
+          <article class="mini-card">
+            <span>Infraestrutura</span>
+            <p>Criar um ponto móvel de energia quando instalar uma solução fixa é lento, caro ou simplesmente inviável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="tecnologia" aria-labelledby="tecnologia-title">
+      <div class="container">
+        <div class="product-shell reveal">
+          <div class="product-video-wrap">
+            <video class="product-video" controls muted playsinline poster="assets/kuara-poster.webp" preload="metadata" aria-label="Demonstração visual da Kuara Solar">
+              <source src="assets/kuara-hero.mp4" type="video/mp4">
+            </video>
+            <span class="video-badge">Kuara em ação</span>
+          </div>
+          <div class="product-copy">
+            <span class="eyebrow">Tecnologia Kuara</span>
+            <h2 id="tecnologia-title">Uma plataforma móvel de <span class="text-gradient">geração solar.</span></h2>
+            <p>A proposta da Kuara combina transporte compacto, estrutura fotovoltaica expansível e disponibilização de energia no ponto de uso. O resultado é uma solução concebida para transformar mobilidade em autonomia energética.</p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 4v16M15 4v16M4 15h16"/></svg></span>
+                <div><strong>Captação fotovoltaica expansível</strong><p>Superfície solar transportável, aberta no local de utilização.</p></div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span>
+                <div><strong>Energia no ponto de uso</strong><p>Para recarga e alimentação de cargas compatíveis com a configuração do sistema.</p></div>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14M7 17l1-8h8l1 8M9 9V6h6v3"/><circle cx="7" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg></span>
+                <div><strong>Mobilidade como infraestrutura</strong><p>O próprio deslocamento do veículo leva a solução até onde a energia é necessária.</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="como-funciona" aria-labelledby="processo-title">
+      <div class="container">
+        <span class="eyebrow reveal">Como funciona</span>
+        <h2 id="processo-title" class="reveal">Pare. Abra. Gere. <span class="text-gradient">Use.</span></h2>
+        <p class="lead reveal">Uma jornada simples de entender — e poderosa para diferentes mercados.</p>
+
+        <div class="steps" style="margin-top:34px">
+          <article class="step reveal"><h3>Transporte</h3><p>A unidade acompanha o veículo em configuração compacta.</p></article>
+          <article class="step reveal"><h3>Implantação</h3><p>No destino, a estrutura é aberta para ampliar a área de captação.</p></article>
+          <article class="step reveal"><h3>Geração</h3><p>Os módulos convertem irradiação solar em energia elétrica.</p></article>
+          <article class="step reveal"><h3>Gestão</h3><p>A eletrônica do sistema direciona a energia conforme a arquitetura disponível.</p></article>
+          <article class="step reveal"><h3>Aplicação</h3><p>A energia pode apoiar recarga e outras cargas compatíveis em campo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="aplicacoes" aria-labelledby="aplicacoes-title">
+      <div class="container">
+        <span class="eyebrow reveal">Product-market fit</span>
+        <h2 id="aplicacoes-title" class="reveal">Uma tecnologia. <span class="text-gradient">Diferentes missões.</span></h2>
+        <p class="lead reveal">A Kuara nasce na interseção entre mobilidade elétrica e energia off-grid, mas seu valor aumenta quando a mesma plataforma resolve diferentes dores de disponibilidade energética.</p>
+
+        <div class="use-grid" style="margin-top:34px">
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">01</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17h14l-1-7-2-3H8l-2 3-1 7Z"/><path d="M7 13h10"/><circle cx="7" cy="18" r="1.5"/><circle cx="17" cy="18" r="1.5"/><path d="m13 8-2 3h2l-1 3 3-4h-2l1-2Z"/></svg></div>
+            <h3>Mobilidade elétrica</h3>
+            <p>Para quem quer viajar levando uma fonte própria de geração solar e reduzir a dependência exclusiva da infraestrutura fixa de recarga.</p>
+            <span class="tag">Mercado âncora</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">02</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 16V9l2-3h12l2 3v7"/><path d="M4 12h16"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg></div>
+            <h3>Motoristas e frotas</h3>
+            <p>Aplicação para veículos de trabalho, motoristas por aplicativo, locadoras e frotas que valorizam disponibilidade operacional.</p>
+            <span class="tag">B2B + ROI</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">03</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M5 20V9l7-5 7 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+            <h3>Agro e campo</h3>
+            <p>Energia móvel para fazendas, técnicos, inspeções, sensores, comunicação e atividades realizadas longe da rede.</p>
+            <span class="tag">Off-grid</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">04</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v4M4.2 7.2l2.8 2.8M19.8 7.2 17 10M3 15h4M17 15h4"/><path d="M8 21h8l2-6a6 6 0 1 0-12 0l2 6Z"/></svg></div>
+            <h3>Emergências e resposta a desastres</h3>
+            <p>Uma fonte móvel para apoiar iluminação, comunicação, informática e outras cargas essenciais quando a infraestrutura local é interrompida.</p>
+            <span class="tag">Impacto público</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">05</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 19 5-9 3 5 2-3 6 7H4Z"/><path d="M16 6h.01"/></svg></div>
+            <h3>Camping e expedições</h3>
+            <p>Energia para viagens, overlanding, motorhomes e aventuras em que autonomia e independência da rede fazem parte da experiência.</p>
+            <span class="tag">B2C aspiracional</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">06</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m14 6 4 4M3 21l6-2 9-9-4-4-9 9-2 6Z"/><path d="m12 8 4 4"/></svg></div>
+            <h3>Obras e manutenção</h3>
+            <p>Suporte a equipes móveis de engenharia, utilities, infraestrutura e serviços técnicos temporários em campo.</p>
+            <span class="tag">Operação B2B</span>
+          </article>
+
+          <article class="use-card reveal">
+            <span class="use-number" aria-hidden="true">07</span>
+            <div class="use-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20v-6M8 20h8M5 10a10 10 0 0 1 14 0M8 13a6 6 0 0 1 8 0M11 16a2 2 0 0 1 2 0"/></svg></div>
+            <h3>Telecom, pesquisa e missões remotas</h3>
+            <p>Energia para instrumentação, conectividade e equipamentos utilizados por equipes técnicas e científicas longe da infraestrutura convencional.</p>
+            <span class="tag">Alta especialização</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visual-title">
+      <div class="container">
+        <span class="eyebrow reveal">Do transporte à energia</span>
+        <h2 id="visual-title" class="reveal">Compacta quando viaja. <span class="text-gradient">Expansível quando importa.</span></h2>
+        <div class="showcase" style="margin-top:32px">
+          <figure class="reveal"><img src="assets/still-2.webp" loading="lazy" decoding="async" width="1280" height="720" alt="Estrutura fotovoltaica Kuara Solar totalmente aberta sobre o teto de um veículo em colinas verdes"><figcaption>Implantação fotovoltaica móvel</figcaption></figure>
+          <figure class="reveal"><img src="assets/still-5.webp" loading="lazy" decoding="async" width="1280" height="720" alt="Unidade de energia Kuara Solar conectada e em uso no porta-malas de um veículo"><figcaption>Energia disponível no ponto de uso</figcaption></figure>
+          <figure class="reveal"><img src="assets/still-8.webp" loading="lazy" decoding="async" width="1280" height="720" alt="Estrutura Kuara Solar recolhida e compacta sobre o teto de um veículo em terreno remoto"><figcaption>Configuração compacta para transporte</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="valor-title">
+      <div class="container">
+        <div class="value-panel reveal">
+          <span class="eyebrow">A proposta de valor</span>
+          <h2 id="valor-title">Energia onde ela é <span class="text-gradient">necessária.</span></h2>
+          <p class="lead">A Kuara não é apenas uma solução para gerar energia solar. É uma forma de deslocar capacidade energética junto com a operação, reduzindo a dependência de um endereço, uma tomada ou uma infraestrutura permanente.</p>
+          <div class="value-grid">
+            <div class="value-item"><strong>Mobilidade</strong><span>A fonte de geração acompanha a missão.</span></div>
+            <div class="value-item"><strong>Autonomia</strong><span>Mais opções quando a infraestrutura é limitada.</span></div>
+            <div class="value-item"><strong>Versatilidade</strong><span>Uma plataforma aplicável a diferentes setores.</span></div>
+            <div class="value-item"><strong>Energia limpa</strong><span>Geração fotovoltaica no ponto de utilização.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="personas-title">
+      <div class="container">
+        <span class="eyebrow reveal">Para quem é</span>
+        <h2 id="personas-title" class="reveal">Da estrada à operação crítica.</h2>
+        <div class="audience-track" style="margin-top:30px">
+          <article class="audience-card reveal"><small>Pessoa física</small><h3>Proprietários de veículos elétricos</h3><p>Buscam liberdade de deslocamento e alternativas para cenários em que a recarga fixa é limitada.</p></article>
+          <article class="audience-card reveal"><small>Profissional</small><h3>Motoristas e operadores de frota</h3><p>Enxergam energia como parte direta de disponibilidade, produtividade e custo operacional.</p></article>
+          <article class="audience-card reveal"><small>Empresas</small><h3>Agro, utilities e engenharia</h3><p>Precisam levar equipes e energia para áreas onde não faz sentido instalar infraestrutura permanente.</p></article>
+          <article class="audience-card reveal"><small>Setor público</small><h3>Defesa civil e resposta emergencial</h3><p>Demandam flexibilidade para restabelecer rapidamente recursos básicos em situações adversas.</p></article>
+          <article class="audience-card reveal"><small>Aventura</small><h3>Camping, motorhome e overlanding</h3><p>Valorizam autonomia energética para permanecer mais tempo longe de pontos convencionais de energia.</p></article>
+          <article class="audience-card reveal"><small>Especialistas</small><h3>Pesquisa e telecomunicações</h3><p>Dependem de eletrônica, instrumentação e conectividade mesmo em missões remotas.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <span class="eyebrow reveal">Dúvidas frequentes</span>
+        <h2 id="faq-title" class="reveal">Entenda a Kuara.</h2>
+        <div class="faq" style="margin-top:28px">
+          <details class="reveal"><summary>O que é a Kuara Solar?</summary><p>A Kuara é uma solução de geração fotovoltaica portátil concebida para ser transportada em veículo, implantada no local de uso e utilizada em cenários de mobilidade elétrica e energia off-grid.</p></details>
+          <details class="reveal"><summary>A Kuara pode carregar um carro elétrico?</summary><p>A mobilidade elétrica é uma das aplicações centrais do projeto. A capacidade efetiva de recarga, potência e ganho de autonomia dependem da configuração elétrica e das especificações finais do sistema e do veículo.</p></details>
+          <details class="reveal"><summary>A energia pode ser utilizada para outros equipamentos?</summary><p>Sim, essa é uma das propostas da plataforma. As cargas possíveis dependem da potência, tensão, saídas e arquitetura da versão utilizada. A Kuara pode ser pensada como um hub móvel de energia para diferentes aplicações compatíveis.</p></details>
+          <details class="reveal"><summary>A Kuara substitui eletropostos ou a rede elétrica?</summary><p>O posicionamento mais adequado é complementar: a Kuara amplia as possibilidades de geração e uso de energia em cenários onde a infraestrutura fixa não está disponível, é limitada ou não é conveniente.</p></details>
+          <details class="reveal"><summary>Em quais setores a tecnologia pode ser aplicada?</summary><p>Mobilidade elétrica, frotas, agronegócio, operações remotas, emergências, camping, obras, manutenção, telecomunicações, pesquisa e outras atividades que precisem de energia descentralizada.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">Vamos conversar</span>
+          <h2 id="contato-title">Sua próxima fonte de energia pode <span class="text-gradient">viajar com você.</span></h2>
+          <p class="lead">Conte como você imagina usar a Kuara. A mensagem será preparada para contato direto com a equipe comercial.</p>
+        </div>
+
+        <form class="contact-form reveal" id="leadForm">
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required placeholder="Seu nome"></div>
+          <div class="field"><label for="telefone">WhatsApp</label><input id="telefone" name="telefone" inputmode="tel" autocomplete="tel" required placeholder="(31) 99999-9999"></div>
+          <div class="field"><label for="perfil">Seu perfil</label><select id="perfil" name="perfil" required><option value="" selected disabled>Selecione</option><option>Proprietário de veículo elétrico</option><option>Motorista por aplicativo</option><option>Empresa / frota</option><option>Agro / operação remota</option><option>Governo / emergência</option><option>Camping / expedição</option><option>Pesquisa / telecom</option><option>Outro</option></select></div>
+          <div class="field"><label for="mensagem">Como você usaria a Kuara?</label><textarea id="mensagem" name="mensagem" placeholder="Ex.: quero avaliar a solução para uma frota de veículos elétricos..."></textarea></div>
+          <button class="btn btn-primary" type="submit" style="width:100%">Solicitar apresentação <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          <p class="form-note">Este site não armazena seus dados. O formulário apenas prepara uma mensagem para envio direto pelo WhatsApp.</p>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="footer-mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#kuara-mark"></use></svg>
+        <div><span>Kuara Solar</span><small>Energia solar que vai com você.</small></div>
+      </div>
+      <div class="footer-meta">© <span id="year"></span> Kuara Solar.<br>Conteúdo técnico sujeito às especificações finais do produto.</div>
+    </div>
+  </footer>
+
+  <a class="floating-cta" id="floatingCta" href="#contato" data-cta="floating">Quero conhecer a Kuara</a>
+
+  <script>
+    (() => {
+      const header = document.getElementById('header');
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+      const floatingCta = document.getElementById('floatingCta');
+      const leadForm = document.getElementById('leadForm');
+      const formStatus = document.getElementById('formStatus');
+      const whatsapp = document.body.dataset.whatsapp.replace(/\D/g,'');
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const onScroll = () => {
+        header.classList.toggle('scrolled', window.scrollY > 24);
+        const contact = document.getElementById('contato').getBoundingClientRect();
+        floatingCta.classList.toggle('hidden', contact.top < window.innerHeight * .75);
+      };
+      onScroll();
+      addEventListener('scroll', onScroll, {passive:true});
+
+      menuToggle.addEventListener('click', () => {
+        const open = navLinks.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', String(open));
+        menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+      });
+      navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded','false');
+      }));
+
+      // Envia eventos ao dataLayer somente se o Google Analytics estiver ativo na página.
+      const trackEvent = (name, params) => {
+        if (window.dataLayer) window.dataLayer.push({ event: name, ...params });
+      };
+      document.querySelectorAll('[data-cta]').forEach(el => {
+        el.addEventListener('click', () => trackEvent('cta_click', { cta_id: el.dataset.cta }));
+      });
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, {threshold:.12, rootMargin:'0px 0px -30px'});
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+      } else {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+      }
+
+      leadForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const data = new FormData(leadForm);
+        const nome = data.get('nome');
+        const telefone = data.get('telefone');
+        const perfil = data.get('perfil');
+        const mensagem = data.get('mensagem') || 'Gostaria de conhecer melhor a solução.';
+        const text = `Olá, equipe Kuara Solar!%0A%0AMeu nome é ${encodeURIComponent(nome)}.%0AMeu WhatsApp: ${encodeURIComponent(telefone)}%0APerfil: ${encodeURIComponent(perfil)}%0AInteresse: ${encodeURIComponent(mensagem)}%0A%0AVim pelo site da Kuara Solar.`;
+
+        if (whatsapp) {
+          window.open(`https://wa.me/${whatsapp}?text=${text}`, '_blank', 'noopener,noreferrer');
+          formStatus.style.display = 'block';
+          formStatus.textContent = 'Mensagem preparada. Se o WhatsApp não abrir, verifique se o navegador bloqueou a nova janela.';
+          trackEvent('generate_lead', { perfil });
+        } else {
+          formStatus.style.display = 'block';
+          formStatus.textContent = 'O site está pronto; falta apenas configurar o número oficial do WhatsApp no atributo data-whatsapp do arquivo index.html.';
+        }
+      });
+
+      // Pausa o vídeo do hero quando ele sai da viewport, economizando bateria/dados no celular.
+      const heroVideo = document.querySelector('.hero-video');
+      if (heroVideo && 'IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver(entries => {
+          entries.forEach(({isIntersecting}) => {
+            if (isIntersecting) heroVideo.play().catch(()=>{}); else heroVideo.pause();
+          });
+        }, {threshold:.05});
+        videoObserver.observe(heroVideo);
+      }
+    })();
+  </script>
+</body>
+</html>

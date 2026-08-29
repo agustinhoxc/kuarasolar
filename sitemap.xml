@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Troque "https://SEU-DOMINIO.com.br/" pelo domínio oficial assim que ele
+  existir, e envie esta URL (https://SEU-DOMINIO.com.br/sitemap.xml) ao
+  Google Search Console em "Sitemaps".
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://SEU-DOMINIO.com.br/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
